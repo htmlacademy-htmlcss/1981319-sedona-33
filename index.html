@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Главная страница</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <!--Шапка сайта-->
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" title="Главная страница">
-          <img class="page-header-logo" src="" alt="Логотип города Седона">
+          <img class="page-header-logo" src="images/general header/logo.svg" width="139" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -24,12 +26,14 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden">Поиск</span>
+              <img src="images/general header/search_icon.svg" width="24" height="24" alt="Поиск.">
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-counter" href="#">
               <span class="visually-hidden">Избранное</span>
+              <img src="images/general header/favorites_icon.svg" width="24" height="24" alt="Избранное.">
             </a>
           </li>
           <li class="navigation-item">
@@ -40,18 +44,19 @@
         </ul>
       </nav>
     </header>
-
+    <!--Приветствие-->
     <main class="main-index">
       <section class="welcome">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img src="" alt="Приветствие">
+        <img src="images/main page/welcome/welcome-index-background.jpg" width="1200" height="485" alt="Красивые горы.">
+        <img class="welcome-inscription" src="images/main page/welcome/welcome-inscription.svg" width="485" height="352" alt="Приветствие.">
       </section>
-
+    <!--Краткое описание-->
       <section class="description">
         <h2 class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="description-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-
+    <!--5 причин-->
       <section class="causes-row">
         <div class="causes-card-text">
           <h3 class="causes-card-tittle">Настоящий городок</h3>
@@ -59,23 +64,23 @@
           <p class="causes-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div>
-          <img class="causes-img" src="" alt="Дома в городе Седона">
+          <img class="causes-img" src="images/main page/causes/town-image.jpg" width="800" height="384" alt="Дома в городе Седона.">
         </div>
       </section>
 
       <section class="causes-row">
         <div class="causes-card-icon">
-          <img class="causes-icon" src="" alt="icon-home">
+          <img class="causes-icon" src="images/main page/causes/home_icon.svg" alt="Дом.">
           <h3 class="causes-card-tittle">Жильё</h3>
           <p class="causes-card-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
         <div class="causes-card-icon">
-          <img class="causes-icon" src="" alt="icon-burger">
+          <img class="causes-icon" src="images/main page/causes/burger_icon.svg" alt="Бургер.">
           <h3 class="causes-card-tittle">Еда</h3>
           <p class="causes-card-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="causes-card-icon">
-          <img class="causes-icon" src="" alt="icon-gift">
+          <img class="causes-icon" src="images/main page/causes/gift_icon.svg" alt="Подарок.">
           <h3 class="causes-card-tittle">Сувениры</h3>
           <p class="causes-card-description">Не только китайского, но и настоящего местного производства!</p>
         </div>
@@ -83,7 +88,7 @@
 
       <section class="causes-row">
         <div>
-          <img class="causes-img" src="" alt="Мост Дьявола">
+          <img class="causes-img" src="images/main page/causes/mountains-image.jpg" width="800" height="384" alt="Мост Дьявола.">
         </div>
         <div class="causes-card-text">
           <h3 class="causes-title-light">Там есть мост дьявола</h3>
@@ -109,14 +114,15 @@
           <p class="causes-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
         </div>
       </section>
-
+    <!--Блок для перехода к поиску гостиниц-->
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p class="hotel-search-caption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-
+    <!--Подписка на рассылку-->
       <section class="description">
+        <img src="images/main page/description/footer-blur-background.jpg" width="1200" height="411" alt="Красивые горы.">
         <h2 class="description-title">Подпишитесь на рассылку</h2>
         <p class="description-caption">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="description-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -125,7 +131,7 @@
         </form>
       </section>
     </main>
-
+    <!--Футер-->
     <footer class="page-footer">
       <section class=footer-social>
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -133,16 +139,19 @@
           <li class="footer-social-item">
             <a class="button" href="https://twitter.com/htmlacademy_ru" target="blank">
               <span class="visually-hidden">Twitter</span>
+              <img src="images/general footer/social/social-twitter.svg" width="24" height="24" alt="Twitter.">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy" target="blank">
               <span class="visually-hidden">Facebook</span>
+              <img src="images/general footer/social/social-facebook.svg" width="24" height="24" alt="Facebook.">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS" target="blank">
               <span class="visually-hidden">Youtube</span>
+              <img src="images/general footer/social/social-youtube.svg" width="24" height="24" alt="Youtube.">
             </a>
           </li>
         </ul>
@@ -155,7 +164,7 @@
 
       <section class=footer-htmlacademy>
         <a href="https://htmlacademy.ru/" target="blank">
-          <img class="footer-htmlacademy-logo" src="" alt="Логотип HTML Academy">
+          <img class="footer-htmlacademy-logo" src="images/general footer/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
         </a>
       </section>
     </footer>
