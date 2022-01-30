@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
     <!--Шапка сайта-->
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" title="Главная страница">
-          <img class="page-header-logo" src="images/general header/logo.svg" width="139" height="70" alt="Логотип города Седона.">
+          <img class="page-header-logo" src="images/svg/logo.svg" width="139" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -23,17 +24,19 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+      </nav>
+      <div class="navigation-user">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="images/general header/search_icon.svg" width="20" height="20" alt="Поиск.">
+              <img src="images/svg/search-icon.svg" width="20" height="20" alt="Поиск.">
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-counter" href="#">
               <span class="visually-hidden">Избранное</span>
-              <img src="images/general header/favorites_icon.svg" width="20" height="20" alt="Избранное.">
+              <img src="images/svg/favorites-icon.svg" width="20" height="20" alt="Избранное.">
             </a>
           </li>
           <li class="navigation-item">
@@ -42,131 +45,138 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
+
     <!--Приветствие-->
     <main class="main-index">
       <section class="welcome">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img src="images/main page/welcome/welcome-index-background.jpg" width="1200" height="485" alt="Красивые горы.">
-        <img class="welcome-inscription" src="images/main page/welcome/welcome-inscription.svg" width="485" height="352" alt="Приветствие.">
+        <img class="welcome-inscription" src="images/svg/welcome-inscription.svg" width="485" height="352" alt="Приветствие.">
       </section>
-    <!--Краткое описание-->
+
+      <!--Краткое описание-->
       <section class="description">
         <h2 class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="description-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-    <!--5 причин-->
-      <section class="causes-row">
-        <div class="causes-card-text">
-          <h3 class="causes-card-tittle">Настоящий городок</h3>
-          <p class="causes-card-description">— №1 —</p>
-          <p class="causes-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        </div>
-        <div>
-          <img class="causes-img" src="images/main page/causes/town-image.jpg" width="800" height="384" alt="Дома в городе Седона.">
-        </div>
+
+      <!--5 причин-->
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item">
+            <div class="features-card-text">
+              <h3 class="features-card-tittle">Настоящий городок</h3>
+              <p class="features-card-description">— №1 —</p>
+              <p class="features-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img class="features-img" src="images/content/town-image.jpg" width="800" height="384" alt="Дома в городе Седона.">
+            </div>
+            <ul class="features-icons-list">
+              <li class="features-item">
+                <div class="features-card-icon">
+                  <img class="features-icon" src="images/svg/housing-icon.svg" width="84" height="84" alt="Мотель.">
+                  <h3 class="features-card-tittle">Жильё</h3>
+                  <p class="features-card-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-card-icon">
+                  <img class="features-icon" src="images/svg/eating-icon.svg" width="84" height="84" alt="Бургер.">
+                  <h3 class="features-card-tittle">Еда</h3>
+                  <p class="features-card-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-card-icon">
+                  <img class="features-icon" src="images/svg/souvenir-icon.svg" width="84" height="84" alt="Сувениры.">
+                  <h3 class="features-card-tittle">Сувениры</h3>
+                  <p class="features-card-description">Не только китайского, но и настоящего местного производства!</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="features-item">
+            <div class="features-card-text">
+              <img class="features-img" src="images/content/mountains-image.jpg" width="800" height="384" alt="Мост Дьявола.">
+              <h3 class="features-card-tittle">Там есть мост дьявола</h3>
+              <p class="features-card-description">— №2 —</p>
+              <p class="features-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+          </li>
+          <li class="features-item">
+            <div class="features-card-text">
+              <h3 class="features-card-tittle">Небольшая площадь</h3>
+              <p class="features-card-description">— №3 —</p>
+              <p class="features-card-description">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="features-card-text">
+              <h3 class="features-card-tittle">Красивая дорога</h3>
+              <p class="features-card-description">— №4 —</p>
+              <p class="causes-card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="features-card-text">
+              <h3 class="features-card-tittle">Мало туристов</h3>
+              <p class="features-card-description">— №5 —</p>
+              <p class="features-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
+            </div>
+          </li>
+        </ul>
       </section>
 
-      <section class="causes-row">
-        <div class="causes-card-icon">
-          <img class="causes-icon" src="images/main page/causes/housing-icon.svg" width="84" height="84" alt="Мотель.">
-          <h3 class="causes-card-tittle">Жильё</h3>
-          <p class="causes-card-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div class="causes-card-icon">
-          <img class="causes-icon" src="images/main page/causes/eating-icon.svg" width="84" height="84" alt="Бургер.">
-          <h3 class="causes-card-tittle">Еда</h3>
-          <p class="causes-card-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="causes-card-icon">
-          <img class="causes-icon" src="images/main page/causes/souvenir-icon.svg" width="84" height="84" alt="Сувениры.">
-          <h3 class="causes-card-tittle">Сувениры</h3>
-          <p class="causes-card-description">Не только китайского, но и настоящего местного производства!</p>
-        </div>
-      </section>
-
-      <section class="causes-row">
-        <div>
-          <img class="causes-img" src="images/main page/causes/mountains-image.jpg" width="800" height="384" alt="Мост Дьявола.">
-        </div>
-        <div class="causes-card-text">
-          <h3 class="causes-title-light">Там есть мост дьявола</h3>
-          <p class="causes-card-description">— №2 —</p>
-          <p class="causes-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </div>
-      </section>
-
-      <section class="causes-row">
-        <div class="causes-card-text">
-          <h3 class="causes-card-tittle">Небольшая площадь</h3>
-          <p class="causes-card-description">— №3 —</p>
-          <p class="causes-card-description">Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class="causes-card-text">
-          <h3 class="causes-card-tittle">Красивая дорога</h3>
-          <p class="causes-card-description">— №4 —</p>
-          <p class="causes-card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="causes-card-text">
-          <h3 class="causes-card-tittle">Мало туристов</h3>
-          <p class="causes-card-description">— №5 —</p>
-          <p class="causes-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
-        </div>
-      </section>
-    <!--Блок для перехода к поиску гостиниц-->
+      <!--Блок для перехода к поиску гостиниц-->
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p class="hotel-search-caption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-    <!--Подписка на рассылку-->
-      <section class="description">
-        <img src="images/main page/description/footer-blur-background.jpg" width="1200" height="411" alt="Красивые горы.">
-        <h2 class="description-title">Подпишитесь на рассылку</h2>
-        <p class="description-caption">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="description-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="text" name="description-e-mail" placeholder="Ваш e-mail" type="e-mail">
-          <button class="description-button button" type="submit">Подписаться</button>
+
+     <!--Подписка на рассылку-->
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-caption">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="text" name="subscription-e-mail" placeholder="Ваш e-mail" type="e-mail">
+          <button class="subscription-button button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
+
     <!--Футер-->
     <footer class="page-footer">
-      <section class=footer-social>
+      <div class=footer-social>
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://twitter.com/htmlacademy_ru" target="blank">
               <span class="visually-hidden">Twitter</span>
-              <img src="images/general footer/social/social-twitter.svg" width="20" height="20" alt="Twitter.">
+              <img src="images/svg/social/social-twitter.svg" width="20" height="20" alt="Twitter.">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy" target="blank">
               <span class="visually-hidden">Facebook</span>
-              <img src="images/general footer/social/social-facebook.svg" width="20" height="20" alt="Facebook.">
+              <img src="images/svg/social/social-facebook.svg" width="20" height="20" alt="Facebook.">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS" target="blank">
               <span class="visually-hidden">Youtube</span>
-              <img src="images/general footer/social/social-youtube.svg" width="20" height="20" alt="Youtube.">
+              <img src="images/svg/social/social-youtube.svg" width="20" height="20" alt="Youtube.">
             </a>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section class="contacts-phone">
+      <div class="contacts-phone">
         <h2 class="visually-hidden">Контактный телефон</h2>
         <a class="contacts-phone-number" href="tel:78128121212">+7 (812) 812-12-12</a>
-      </section>
+      </div>
 
-      <section class=footer-htmlacademy>
+      <div class=footer-htmlacademy>
         <a href="https://htmlacademy.ru/" target="blank">
-          <img class="footer-htmlacademy-logo" src="images/general footer/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
+          <img class="footer-htmlacademy-logo" src="images/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
