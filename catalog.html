@@ -10,7 +10,7 @@
     <!--Шапка сайта-->
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" title="Главная страница">
+        <a class="navigation-logo" href="index.html" title="Главная страница">
           <img class="page-header-logo" src="images/svg/logo.svg" width="139" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
@@ -25,27 +25,25 @@
           </li>
         </ul>
       </nav>
-      <div class="navigation-user">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-              <img src="images/svg/search-icon.svg" width="20" height="20" alt="Поиск.">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-counter" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <img src="images/svg/favorites-icon.svg" width="20" height="20" alt="Избранное.">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button" href="#">
-              Хочу сюда!
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="navigation-list">
+         <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+            <img src="images/svg/search-icon.svg" width="20" height="20" alt="Поиск.">
+           </a>
+         </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-counter" href="#">
+            <span class="visually-hidden">Избранное</span>
+             <img src="images/svg/favorites-icon.svg" width="20" height="20" alt="Избранное.">
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link button" href="#">
+            Хочу сюда!
+          </a>
+        </li>
+      </ul>
     </header>
 
     <!--Фильтр Гостиницы Седоны-->
@@ -130,8 +128,8 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
         </div>
-        <div class="result-sort-card-display">
-          <a href="#" class="current-card-display-button button">
+        <div class="result-sort-display">
+          <a href="#" class="current-display-button button">
             <span class="visually-hidden">Показать карточки</span>
             <img src="images/svg/tile-icon.svg" width="20" height="20" alt="Карточки.">
           </a>
