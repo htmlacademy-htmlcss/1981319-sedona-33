@@ -25,51 +25,45 @@
           </li>
         </ul>
       </nav>
-      <div class="navigation-user">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-              <img src="images/svg/search-icon.svg" width="20" height="20" alt="Поиск.">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-counter" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <img src="images/svg/favorites-icon.svg" width="20" height="20" alt="Избранное.">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button" href="#">
-              Хочу сюда!
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="navigation-list">
+         <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+            <img src="images/svg/search-icon.svg" width="20" height="20" alt="Поиск.">
+           </a>
+         </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-counter" href="#">
+            <span class="visually-hidden">Избранное</span>
+             <img src="images/svg/favorites-icon.svg" width="20" height="20" alt="Избранное.">
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link button" href="#">
+            Хочу сюда!
+          </a>
+        </li>
+      </ul>
     </header>
 
     <!--Приветствие-->
     <main class="main-index">
       <section class="welcome">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img class="welcome-inscription" src="images/svg/welcome-inscription.svg" width="485" height="352" alt="Приветствие.">
-      </section>
-
-      <!--Краткое описание-->
-      <section class="description">
-        <h2 class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="description-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="welcome-inscription"><img src="images/svg/welcome-inscription.svg" width="485" height="352" alt="Приветствие."></p>
       </section>
 
       <!--5 причин-->
       <section class="features">
+        <h2 class="description-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+        <p class="description-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="features-list">
           <li class="features-item">
             <div class="features-card-text">
               <h3 class="features-card-tittle">Настоящий городок</h3>
               <p class="features-card-description">— №1 —</p>
               <p class="features-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="features-img" src="images/content/town-image.jpg" width="800" height="384" alt="Дома в городе Седона.">
+              <img class="features-img-right" src="images/content/town-image.jpg" width="800" height="384" alt="Дома в городе Седона.">
             </div>
             <ul class="features-icons-list">
               <li class="features-item">
@@ -97,28 +91,35 @@
           </li>
           <li class="features-item">
             <div class="features-card-text">
-              <img class="features-img" src="images/content/mountains-image.jpg" width="800" height="384" alt="Мост Дьявола.">
+              <img class="features-img-left" src="images/content/mountains-image.jpg" width="800" height="384" alt="Мост Дьявола.">
               <h3 class="features-card-tittle">Там есть мост дьявола</h3>
               <p class="features-card-description">— №2 —</p>
               <p class="features-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
-          <li class="features-item">
-            <div class="features-card-text">
-              <h3 class="features-card-tittle">Небольшая площадь</h3>
-              <p class="features-card-description">— №3 —</p>
-              <p class="features-card-description">Все достопримечательности находятся очень близко</p>
-            </div>
-            <div class="features-card-text">
-              <h3 class="features-card-tittle">Красивая дорога</h3>
-              <p class="features-card-description">— №4 —</p>
-              <p class="causes-card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-            <div class="features-card-text">
-              <h3 class="features-card-tittle">Мало туристов</h3>
-              <p class="features-card-description">— №5 —</p>
-              <p class="features-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
-            </div>
+            <ul class="features-text-list">
+              <li class="features-item">
+                <div class="features-card-text">
+                  <h3 class="features-card-tittle">Небольшая площадь</h3>
+                  <p class="features-card-description">— №3 —</p>
+                  <p class="features-card-description">Все достопримечательности находятся очень близко</p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-card-text">
+                  <h3 class="features-card-tittle">Красивая дорога</h3>
+                  <p class="features-card-description">— №4 —</p>
+                  <p class="causes-card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-card-text">
+                  <h3 class="features-card-tittle">Мало туристов</h3>
+                  <p class="features-card-description">— №5 —</p>
+                  <p class="features-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
