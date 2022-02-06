@@ -9,10 +9,10 @@
 
     <!--Шапка сайта-->
     <header class="page-header">
+      <a class="navigation-logo" title="Главная страница">
+        <img class="page-header-logo" src="images/svg/logo.svg" width="139" height="70" alt="Логотип города Седона.">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" title="Главная страница">
-          <img class="page-header-logo" src="images/svg/logo.svg" width="139" height="70" alt="Логотип города Седона.">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="main.html">Главная</a>
@@ -25,7 +25,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-user">
          <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
@@ -47,10 +47,10 @@
     </header>
 
     <!--Приветствие-->
-    <main class="main-index">
+    <main class="main-container main-index">
       <section class="welcome">
         <h1 class="visually-hidden">Город Седона</h1>
-        <p class="welcome-inscription"><img src="images/svg/welcome-inscription.svg" width="485" height="352" alt="Приветствие."></p>
+        <img class="welcome-inscription"src="images/svg/welcome-inscription.svg" width="485" height="352" alt="Приветствие.">
       </section>
 
       <!--5 причин-->
@@ -59,10 +59,12 @@
         <p class="description-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="features-list">
           <li class="features-item">
-            <div class="features-card-text">
-              <h3 class="features-card-tittle">Настоящий городок</h3>
-              <p class="features-card-description">— №1 —</p>
-              <p class="features-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="features-card-left">
+              <div class="card-title-description">
+                <h3 class="features-card-tittle">Настоящий городок</h3>
+                <p class="features-card-description">— №1 —</p>
+                <p class="features-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img class="features-img-right" src="images/content/town-image.jpg" width="800" height="384" alt="Дома в городе Седона.">
             </div>
             <ul class="features-icons-list">
@@ -90,51 +92,54 @@
             </ul>
           </li>
           <li class="features-item">
-            <div class="features-card-text">
+            <div class="features-card-right">
               <img class="features-img-left" src="images/content/mountains-image.jpg" width="800" height="384" alt="Мост Дьявола.">
-              <h3 class="features-card-tittle">Там есть мост дьявола</h3>
-              <p class="features-card-description">— №2 —</p>
-              <p class="features-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="features-card-text">
+                <div class="card-title-description">
+                  <h3 class="features-card-tittle">Там есть мост дьявола</h3>
+                  <p class="features-card-description">— №2 —</p>
+                  <p class="features-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </div>
             </div>
           </li>
-            <ul class="features-text-list">
-              <li class="features-item">
-                <div class="features-card-text">
-                  <h3 class="features-card-tittle">Небольшая площадь</h3>
-                  <p class="features-card-description">— №3 —</p>
-                  <p class="features-card-description">Все достопримечательности находятся очень близко</p>
-                </div>
-              </li>
-              <li class="features-item">
-                <div class="features-card-text">
-                  <h3 class="features-card-tittle">Красивая дорога</h3>
-                  <p class="features-card-description">— №4 —</p>
-                  <p class="causes-card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-              </li>
-              <li class="features-item">
-                <div class="features-card-text">
-                  <h3 class="features-card-tittle">Мало туристов</h3>
-                  <p class="features-card-description">— №5 —</p>
-                  <p class="features-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
-                </div>
-              </li>
-            </ul>
-          </li>
+          <div class="card-text-list">
+            <li class="features-item">
+              <div class="features-card-text">
+                <h3 class="features-card-tittle">Небольшая площадь</h3>
+                <p class="features-card-description">— №3 —</p>
+                <p class="features-card-description">Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-card-text">
+                <h3 class="features-card-tittle">Красивая дорога</h3>
+                <p class="features-card-description">— №4 —</p>
+                <p class="causes-card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-card-text">
+                <h3 class="features-card-tittle">Мало туристов</h3>
+                <p class="features-card-description">— №5 —</p>
+                <p class="features-card-description">Большинство едет в Гранд Каньон и толпятся там</p>
+              </div>
+            </li>
+          </div>
         </ul>
       </section>
 
       <!--Блок для перехода к поиску гостиниц-->
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
-        <p class="hotel-search-caption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="hotel-search-caption">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
      <!--Подписка на рассылку-->
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-caption">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-caption">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="text" name="subscription-e-mail" placeholder="Ваш e-mail" type="e-mail">
           <button class="subscription-button button" type="submit">Подписаться</button>
@@ -144,39 +149,42 @@
 
     <!--Футер-->
     <footer class="page-footer">
-      <div class=footer-social>
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru" target="blank">
-              <span class="visually-hidden">Twitter</span>
-              <img src="images/svg/social/social-twitter.svg" width="20" height="20" alt="Twitter.">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy" target="blank">
-              <span class="visually-hidden">Facebook</span>
-              <img src="images/svg/social/social-facebook.svg" width="20" height="20" alt="Facebook.">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS" target="blank">
-              <span class="visually-hidden">Youtube</span>
-              <img src="images/svg/social/social-youtube.svg" width="20" height="20" alt="Youtube.">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="foter-wrapper">
+        <div class=footer-social>
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru" target="blank">
+                <span class="visually-hidden">Twitter</span>
+                <img src="images/svg/social/social-twitter.svg" width="20" height="20" alt="Twitter.">
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.facebook.com/htmlacademy" target="blank">
+                <span class="visually-hidden">Facebook</span>
+                <img src="images/svg/social/social-facebook.svg" width="20" height="20" alt="Facebook.">
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS" target="blank">
+                <span class="visually-hidden">Youtube</span>
+                <img src="images/svg/social/social-youtube.svg" width="20" height="20" alt="Youtube.">
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="contacts-phone">
-        <h2 class="visually-hidden">Контактный телефон</h2>
-        <a class="contacts-phone-number" href="tel:78128121212">+7 (812) 812-12-12</a>
-      </div>
+        <div class="contacts-phone">
+          <h2 class="visually-hidden">Контактный телефон</h2>
+          <a class="contacts-phone-number" href="tel:78128121212">+7 (812) 812-12-12</a>
+        </div>
 
-      <div class=footer-htmlacademy>
-        <a href="https://htmlacademy.ru/" target="blank">
-          <img class="footer-htmlacademy-logo" src="images/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
-        </a>
+        <div class=footer-htmlacademy>
+          <h2 class="visually-hidden">Логотип академии</h2>
+          <a href="https://htmlacademy.ru/" target="blank">
+            <img class="footer-htmlacademy-logo" src="images/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

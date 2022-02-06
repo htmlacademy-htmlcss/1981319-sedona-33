@@ -14,12 +14,46 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000;
   background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Шапка */
+
+.page-header {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation {
+  width: 480px;
+}
+
+.navigation-user {
+  width: 360px;
 }
 
 .navigation-link {
@@ -43,10 +77,6 @@ body {
   text-transform: uppercase;
 }
 
-.subscription-button {
-  background-color: #83B3D3;
-}
-
 .navigation-link button {
   font-size: 16px;
   font-weight: 700;
@@ -57,6 +87,84 @@ body {
   background-color: #756257;
 }
 
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Приветствие */
+
+.welcome-inscription {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 82px;
+}
+
+.description-title {
+  width: 720px;
+  height: 80px;
+  padding-top: 80px;
+  padding-left: 240px;
+  padding-right: 240px;
+  padding-bottom: 24px;
+  margin: 0;
+}
+
+.description-caption {
+  width: 720px;
+  height: 37px;
+  padding-left: 240px;
+  padding-right: 240px;
+  margin: 0;
+}
+
+.features-list {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Карточка и правая картинка */
+
+.features-card-left {
+  display: flex;
+  padding-top: 80px;
+}
+
+.features-card-right {
+  display: flex;
+}
+
+.card-title-description {
+  width: 400px;
+  margin: 0;
+}
+
+
+/* Карточки с иконками */
+
+.features-icons-list {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.features-card-icon {
+  width: 400px;
+  height: 384px;
+  margin: 0;
+}
+.features-card-text {
+  width: 400px;
+  height: 384px;
+  margin: 0;
+}
+
+.subscription-button {
+  background-color: #83B3D3;
+}
+
 .main-index {
   color: #000;
   background-color: #fff;
@@ -64,10 +172,6 @@ body {
   background-size: 1200px;
   background-repeat: no-repeat;
   background-position: center top;
-}
-
-.welcome-inscription {
-  text-align:center;
 }
 
 .description {
@@ -89,6 +193,27 @@ body {
   color: inherit;
 }
 
+
+/* Нижний ряд карточек */
+
+.card-text-list {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.features-card-text {
+  width: 400px;
+}
+
+/* Список причин */
+
+.features-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .features {
   text-align: center;
 }
@@ -107,6 +232,13 @@ body {
   color: inherit;
 }
 
+.features-card-description {
+  width: 250px;
+  padding-left: 75px;
+}
+
+/* Поиск отеля */
+
 .hotel-search {
   text-align: center;
 }
@@ -115,6 +247,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
   color: inherit;
 }
 
@@ -140,6 +273,8 @@ body {
   font-weight: 700;
   line-height: 36px;
   color: #fff;
+  text-transform: uppercase;
+  padding-top: 94px;
 }
 
 .subscription-caption {
@@ -147,6 +282,28 @@ body {
   font-weight: 400;
   line-height: 26px;
   color: #fff;
+}
+
+.subscription-form {
+  padding-bottom: 94px;
+}
+
+/* Футер */
+
+.foter-wrapper {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 104px;
+  margin-right: auto;
+}
+
+.contacts-phone {
+  width: 720px;
+  text-align: center;
 }
 
 .contacts-phone-number {
@@ -158,9 +315,17 @@ body {
   color: inherit;
 }
 
-/* Каталог */
+.footer-htmlacademy {
+  width: 115px;
+  margin-left: auto;
+}
+
+
+/* ====================================== Каталог ====================================== */
 
 .main-inner {
+  width: 1200px;
+  margin: 0 auto;
   color: #000;
   background-color: #fff;
 }
@@ -257,4 +422,64 @@ body {
 .pagination-current {
   color: #000;
   background-color: #F2F2F2;
+}
+/* Фильтры */
+.catalog-filter {
+ display: flex;
+}
+
+.filter-infrastructure {
+  width: 150px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.filter-housing {
+  width: 240px;
+  padding-right: 140px;
+}
+
+.filter-price {
+  width: 290px;
+  padding-right: 80px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.filter-result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-title {
+  padding-left: 72px;
+}
+
+.result-sort-select {
+  width: 288px;
+  padding-right: 80px;
+  padding-left: auto;
+}
+
+.result-sort-display {
+  padding-right: 72px;
+}
+
+/* Карточки с гостинницами */
+.hotels-cards-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.hotel-card {
+  width: 339px;
+  padding: 20px;
+
+}
+
+.pagination-view {
+  display: flex;
+  justify-content: space-between;
 }
