@@ -470,6 +470,7 @@ body {
 /* Карточки с гостинницами */
 .hotels-cards-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
