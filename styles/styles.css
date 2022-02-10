@@ -14,12 +14,78 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000;
   background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Основные контейнеры ===================== */
+
+.page-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Шапка =================================== */
+
+.page-header {
+  display: flex;
+  width: 1060px;
+  height: 70px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation {
+  width: 480px;
+}
+
+.navigation-user {
+  width: 360px;
 }
 
 .navigation-link {
@@ -43,10 +109,6 @@ body {
   text-transform: uppercase;
 }
 
-.subscription-button {
-  background-color: #83B3D3;
-}
-
 .navigation-link button {
   font-size: 16px;
   font-weight: 700;
@@ -57,21 +119,32 @@ body {
   background-color: #756257;
 }
 
-.main-index {
+
+/* ====================================== ГЛАВНАЯ ====================================== */
+
+
+/* Фоновая картинка на Главной ========== */
+.welcome {
   color: #000;
   background-color: #fff;
   background-image: url("../images/content/welcome-index-background.jpg");
-  background-size: 1200px;
+  height: 485px;
   background-repeat: no-repeat;
-  background-position: center top;
 }
+
+
+/* Приветствие ========================== */
 
 .welcome-inscription {
-  text-align:center;
+  width: 485px;
+  height: 352px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
 }
 
-.description {
-  text-align: center;
+.welcome-inscription img {
+  width: 100%
 }
 
 .description-title {
@@ -80,7 +153,32 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: inherit;
+  width: 720px;
+  height: 80px;
+  padding-top: 64px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 0 ;
+  margin: 0 auto;
 }
+
+.description-caption {
+  width: 720px;
+  height: 37px;
+  padding-top: 24px;
+  padding-left: auto;
+  padding-right: auto;
+  margin: 0 auto;
+}
+
+
+/* Список 5 причин ======================== */
+
+.description {
+  text-align: center;
+}
+
+
 
 .description-caption {
   font-size: 22px;
@@ -88,6 +186,79 @@ body {
   line-height: 36px;
   color: inherit;
 }
+
+.features-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/* Карточка и правая картинка - 1 - ======= */
+
+.features-card-left {
+  display: flex;
+  height: 384px;
+  padding-top: 80px;
+}
+
+.card-title-description {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+/* Правая картинка */
+.features-img-right {
+  width: 800px;
+  height: 384px;
+  margin: 0;
+}
+
+.features-img-right img {
+  width: 100%;
+}
+
+
+/* Карточки с иконками ===================== */
+
+.features-icons-list {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.features-card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 384px;
+}
+
+
+/* Левая картинка и карточка - 2 -  ======== */
+
+.features-card-right {
+  display: flex;
+  height: 384px;
+}
+
+/* Левая картинка */
+.features-img-left {
+  width: 800px;
+  height: 384px;
+  margin: 0;
+}
+
+.features-img-left img{
+  width: 100%;
+}
+
+
+/* Нижний ряд карточек - 3 - 4 - 5 - ======== */
 
 .features {
   text-align: center;
@@ -107,7 +278,30 @@ body {
   color: inherit;
 }
 
+.features-list-bottom {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.features-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 384px;
+}
+
+
+/* Переход к поиску гостиниц ================= */
+
 .hotel-search {
+  display: flex;
+  flex-direction: column;
+  width: 1200 px;
+  height: 416px;
   text-align: center;
 }
 
@@ -115,6 +309,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
   color: inherit;
 }
 
@@ -125,14 +320,19 @@ body {
   color: inherit;
 }
 
+
+/* Пописка на рассылку ======================= */
+
 .subscription {
- text-align: center;
- color: #fff;
- background-color: 000;
- background-image: url("../images/content/subscription-background.jpg");
- background-size: 1200px;
- background-repeat: no-repeat;
- background-position: center top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  height: 412px;
+  color: #fff;
+  background-color: 000;
+  background-image: url("../images/content/subscription-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .subscription-title {
@@ -140,13 +340,52 @@ body {
   font-weight: 700;
   line-height: 36px;
   color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  height: 50px;
+  padding-top: 90px;
 }
 
 .subscription-caption {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  text-align: center;
   color: #fff;
+  margin: 0;
+  padding-top: 16px;
+}
+
+.subscription-form {
+  padding-top: 24px;
+  padding-bottom: 96px;
+}
+
+.subscription-button {
+  background-color: #83B3D3;
+}
+
+
+/* Футер ====================================== */
+
+.page-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social {
+  width: 104px;
+  margin-right: auto;
+}
+
+.contacts-phone {
+  width: 720px;
+  text-align: center;
 }
 
 .contacts-phone-number {
@@ -158,12 +397,14 @@ body {
   color: inherit;
 }
 
-/* Каталог */
-
-.main-inner {
-  color: #000;
-  background-color: #fff;
+.footer-htmlacademy {
+  width: 115px;
+  margin-left: auto;
 }
+
+
+
+/* ====================================== КАТАЛОГ ====================================== */
 
 .hotels {
   color: #fff;
@@ -171,6 +412,52 @@ body {
   background-image: url("../images/content/catalog-background.jpg");
   background-size: 1200px;
   background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  color: #fff;
+  margin: 0;
+}
+
+
+/* Хлебные крошки ============================ */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #fff
+}
+
+/* Фильтры =================================== */
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+ .filter-infrastructure {
+   width: 150px;
+}
+
+ .filter-housing {
+   width: 240px;
+}
+
+ .filter-price {
+   width: 290px;
 }
 
 .result-title {
@@ -182,8 +469,47 @@ body {
   color: #000
 }
 
-.select-control {
-  color: #333;
+.filter-button {
+  background-color: #83B3D3;
+  color: #fff;
+}
+
+.filter-button-text {
+  background-color: transparent;
+  color: #fff;
+}
+
+.filter-result {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Переключение отображения карточек ========= */
+
+.card-display-button {
+  background-color: transparent;
+  color: #333
+}
+
+.current-display-button {
+  background-color: transparent;
+  color: #333
+}
+
+
+/* Карточки с гостинницами =================== */
+
+.hotels-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.hotel-card {
+  width: 339px;
 }
 
 .hotel-card-title {
@@ -202,6 +528,10 @@ body {
   color: #000
 }
 
+.hotel-card-grade p {
+  background-color: #F2F2F2;
+}
+
 .hotel-card-rating {
   font-size: 16px;
   font-weight: 400;
@@ -211,36 +541,19 @@ body {
   color: #333
 }
 
-.hotel-card-grade p {
-  background-color: #F2F2F2;
-}
-
-.card-display-button {
-  background-color: transparent;
-  color: #333
-}
-
-.current-display-button {
-  background-color: transparent;
-  color: #333
-}
-
-.filter-button {
-  background-color: #83B3D3;
-  color: #fff;
-}
-
-.filter-button-text {
-  background-color: transparent;
-  color: #fff;
-}
-
 .hotel-card-button {
   background-color: #83B3D3;
 }
 
 .result-show-more {
   background-color: #83B3D3;
+}
+
+
+/* Листалка =============================== */
+
+.pagination-view {
+  display: flex;
 }
 
 .pagination-link {
