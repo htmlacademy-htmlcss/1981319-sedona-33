@@ -205,7 +205,7 @@ body {
 .card-title-description {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  min-width: 400px;
 }
 
 /* Правая картинка */
@@ -234,8 +234,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 384px;
+  min-width: 400px;
+  min-height: 384px;
 }
 
 
@@ -243,7 +243,7 @@ body {
 
 .features-card-right {
   display: flex;
-  height: 384px;
+  min-height: 384px;
 }
 
 /* Левая картинка */
@@ -290,8 +290,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 384px;
+  min-width: 400px;
+  min-height: 384px;
 }
 
 
@@ -504,7 +504,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-inline-start: 0;
+  padding: 0;
   list-style: none;
 }
 
