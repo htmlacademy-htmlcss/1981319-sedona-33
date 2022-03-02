@@ -27,8 +27,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000;
-  background-color: #fff;
-  width: 1200px;
+  background-color: #F2F2F2;
   margin: 0 auto;
 }
 
@@ -136,30 +135,24 @@ body {
   min-height: 66px;
 }
 
-.navigation-link-counter::before {
+.navigation-link-counter {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #7DB54F;
-  left: 24px;
-  top: 16px;
-  content: "";
-}
-
-.counter-number {
-  position: absolute;
-  content: "";
+  display: block;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 10px;
   font-weight: 400;
   line-height: 13px;
   color: #fff;
   text-align: center;
+  padding-top: 3px;
   letter-spacing: -0.1em;
-  top: 20px;
-  left: 29px;
-  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+  left: 24px;
+  top: 16px;
 }
 
 .navigation-link {
@@ -187,15 +180,15 @@ body {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.navigation-link-current::after {
+/* .line::after {
   position: absolute;
   right: 16px;
   bottom: 0;
   left: 16px;
-  height: 2px;
+  height: 1px;
   background-color: #756257;
   content: "";
-}
+} */
 
 .navigation-item {
   margin-left: 2px;
@@ -524,15 +517,16 @@ body {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  min-height: 412px;
+  /* min-height: 412px; */
   color: #fff;
-  background-color: 000;
+  background-color: #E6E6E6;
   background-image: url("../images/content/subscription-background.jpg");
   background-repeat: no-repeat;
 }
 
 .catalog-subscription {
   background-image: none;
+  background-color: #fff;
 }
 
 .subscription-title {
@@ -542,7 +536,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 94px;
+  margin-top: 72px;
   margin-bottom: 30px;
 }
 
@@ -579,6 +573,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+  outline: none;
 }
 
 .subscription-button {
@@ -945,6 +940,11 @@ body {
   color: #333;
 }
 
+.number-select .select-control {
+  width: 160px;
+  margin-left: 51px;
+}
+
 /* Переключение отображения карточек ========= */
 
 .result-sort-display {
@@ -1001,7 +1001,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .hotel-card {
@@ -1153,9 +1153,30 @@ body {
 
 
 .show-more {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin: 0 72px 32px;
+  margin: 0 72px 62px;
+}
+
+.show-more::after {
+  position: absolute;
+  height: 1px;
+  background-color: #E6E6E6;
+  left: 0;
+  right: 0;
+  top: -30px;
+  content: "";
+}
+
+.result-show-more::before {
+  position: absolute;
+  height: 1px;
+  background-color: #E6E6E6;
+  left: 0;
+  right: 0;
+  top: 80px;
+  content: "";
 }
 
 .result-show-more {
@@ -1163,6 +1184,20 @@ body {
   padding: 16px 0;
   background-color: #83B3D3;
 }
+
+.result-show-more:hover {
+  background-color: #68A2CA;
+}
+
+.result-show-more:focus {
+  background-color: #68A2CA;
+  box-shadow: inset 0 0 0 3px #756257;
+}
+
+.result-show-more:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 
 /* Листалка =============================== */
@@ -1184,12 +1219,12 @@ body {
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
-  background-color: #83B3D3;
 }
 
 .pagination-link {
   display: block;
   box-sizing: border-box;
+  border-radius: 4px;
   width: 55px;
   height: 55px;
   padding: 16px;
@@ -1201,10 +1236,27 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #83B3D3;
+  outline: none;
+}
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+  box-shadow: inset 0 0 0 3px #756257;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
   color: #000;
+  background-color: #F2F2F2;
+}
+
+.pagination-current:hover {
   background-color: #F2F2F2;
 }
