@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="navigation-user">
-            <div class="navigation-link-counter counter-number">12</div>
+            <div class="navigation-link-counter">12</div>
             <a class="navigation-user-link" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
@@ -137,7 +137,7 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-caption">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="text" name="subscription-e-mail" placeholder="Ваш e-mail" type="e-mail">
+            <input class="form-text" name="subscription-e-mail" placeholder="Ваш e-mail" type="e-mail">
             <button class="subscription-button button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -189,6 +189,64 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <img src="images/svg/modal-close.svg" alt="Закрыть">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group form-arrival-date">
+                <a href="#">
+                  <img class="date-icon" src="images/svg/date-icon.svg" alt="Календарь">
+                </a>
+                  <label class="form-label" for="arrival-date">Дата заезда:</label>
+                  <input class="form-search-text" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+                  <p class="input-hint-error">Мы не можем отправить вас в прошлое.</p>
+              </p>
+              <p class="field-group form-departure-date">
+                <a href="#">
+                  <img class="date-icon" src="images/svg/date-icon.svg" alt="Календарь">
+                </a>
+                  <label class="form-label" for="departure-date">Дата выезда:</label>
+                  <input class="form-search-text" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
+                  <p class="input-hint">На эти даты есть свободные номера. Пока есть.</p>
+              </p>
+              <div class="adults-and-children">
+                <p class="field-group form-adults">
+                  <label class="form-label" for="adults">Взрослые:</label>
+                  <a href="#">
+                    <img class="plus-icon" src="images/svg/plus-icon.svg" alt="Добавить">
+                  </a>
+                  <a href="#">
+                    <img class="minus-icon" src="images/svg/minus-icon.svg" alt="Убрать">
+                  </a>
+                  <input class="form-search-text" type="number" id="adults" name="adults" placeholder="2">
+                </p>
+                <p class="field-group form-children">
+                  <label class="form-label" for="adults">Дети:</label>
+                  <button class="info">
+                    <img src="images/svg/info-icon.svg" alt="Информация">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                  <a href="#">
+                    <img class="plus-icon" src="images/svg/plus-icon.svg" alt="Добавить">
+                  </a>
+                  <a href="#">
+                    <img class="minus-icon" src="images/svg/minus-icon.svg" alt="Убрать">
+                  </a>
+                  <input class="form-search-text" type="number" id="children" name="children" placeholder="1">
+                </p>
+              </div>
+              <div class="search-button">
+                <button class="button search-submit-button" type="submit">Найти</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
