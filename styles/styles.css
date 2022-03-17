@@ -45,6 +45,10 @@ body {
 /* Основные контейнеры ===================== */
 
 .page-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -62,7 +66,6 @@ body {
   margin: 0 auto;
 }
 
-
 /* Шапка =================================== */
 
 .page-header {
@@ -77,13 +80,10 @@ body {
 }
 
 .navigation-logo {
-  display: block;
   height: 66px;
   padding: 0;
   outline: none;
-}
-
-.page-header-logo {
+  margin-bottom: auto;
   position: relative;
   top: 0;
   z-index: 1;
@@ -118,6 +118,7 @@ body {
   margin-left: auto;
   justify-content: end;
   align-items: center;
+  margin-bottom: auto;
 }
 
 .navigation-user {
@@ -219,7 +220,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .button {
   box-sizing: border-box;
   font-family: inherit;
@@ -267,10 +267,7 @@ body {
   background-color: #756257;
 }
 
-
-
 /* ====================================== ГЛАВНАЯ ====================================== */
-
 
 /* Фоновая картинка и разделитель на Главной ========== */
 
@@ -285,20 +282,15 @@ body {
   margin-bottom: 64px;
 }
 
-
 /* Приветствие ========================== */
 
 .welcome-inscription {
   margin: 0 auto;
+  margin-top: 51px;
 }
 
 .welcome-inscription img {
   width: 100%
-}
-
-.sedona {
-  display: block;
-  margin-top: 51px;
 }
 
 .features {
@@ -344,7 +336,6 @@ body {
   display: block;
   box-sizing: border-box;
   width: 400px;
-  max-height: 384px;
   min-height: 384px;
   padding: 98px 80px 80px;
   background-color: #83B3D3;
@@ -419,7 +410,6 @@ body {
   width: 100%;
 }
 
-
 /* Карточки с иконками ===================== */
 
 .features-icons-list {
@@ -448,7 +438,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 /* Картинка */
 .features-img-left {
   max-width: 800px;
@@ -460,7 +449,6 @@ body {
 .features-img-left img {
   width: 100%;
 }
-
 
 /* Переход к поиску гостиниц ================= */
 
@@ -510,7 +498,6 @@ body {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  /* min-height: 412px; */
   color: #fff;
   background-color: #E6E6E6;
   background-image: url("../images/content/subscription-background.jpg");
@@ -597,7 +584,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 /* Футер ====================================== */
 
 .page-footer {
@@ -606,6 +592,7 @@ body {
   width: 100%;
   min-height: 120px;
   margin: 0 auto;
+  margin-top: auto;
 }
 
 /* Соцсети */
@@ -641,7 +628,6 @@ body {
   display: block;
   fill: #83B3D3
 }
-
 
 .social-link:hover .social-icon{
   fill: #68A2CA;
@@ -731,7 +717,6 @@ body {
   fill: rgba(117, 98, 87, 0.3);
 }
 
-
 /* ====================================== КАТАЛОГ ====================================== */
 
 .hotels {
@@ -753,7 +738,6 @@ body {
   margin: 0 72px 4px;
   padding-top: 32px;
 }
-
 
 /* Хлебные крошки ============================ */
 
@@ -819,7 +803,6 @@ body {
 
 /* Фильтры =================================== */
 
-
 .filters {
   list-style: none;
   margin: 0;
@@ -879,8 +862,17 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark{
-  background-image: url(images/svg/check-icon.svg);
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/svg/check-icon.svg");
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Радио-кнопка */
@@ -901,6 +893,10 @@ body {
   content: "";
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
 .hotel-cost-prise {
   display: flex;
 }
@@ -913,7 +909,7 @@ body {
 .from,
 .to {
   position: absolute;
-  top: -3px;
+  top: 15px;
   right: 16px;
   opacity: 0.3;
 }
@@ -935,7 +931,6 @@ body {
 
 .input-from {
   border-radius: 4px 0 0 4px;
-  /* border-right: 1px; */
 }
 
 .input-from::-webkit-inner-spin-button,
@@ -955,11 +950,10 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.3)
 }
 
-.input-from:focus {
-  box-shadow: 0px 0px 0px 3px #81B3D2;
+.input-from:focus,
+.input-to:focus {
   outline: 3px solid #81B3D2;
 }
-
 
 .range-scale {
   position: relative;
@@ -1006,8 +1000,6 @@ body {
   top: -8px;
   right: 0px;
 }
-
-
 
 .catalog-filter-list {
   list-style-type: none;
@@ -1062,7 +1054,8 @@ body {
 
 .filter-text-button:focus {
   background-color: transparent;
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  /* box-shadow: inset 0 0 0 3px #83B3D3; */
+  outline: 3px solid #83B3D3;
 }
 
 .filter-text-button:active {
@@ -1145,12 +1138,16 @@ body {
 
 .arrow-icon {
   position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
   top: 14px;
   right: 16px;
   opacity: 0.3;
   z-index: 1;
 }
-
 
 /* Переключение отображения карточек ========= */
 
@@ -1239,7 +1236,6 @@ body {
   display: grid;
   grid-template-columns: 160px auto;
 }
-
 
 .hotel-card-title {
   font-size: 24px;
@@ -1358,7 +1354,6 @@ body {
   color: rgba(255, 255, 255, 0.3)
 }
 
-
 .show-more {
   display: flex;
   justify-content: center;
@@ -1382,14 +1377,12 @@ body {
 
 .result-show-more:focus {
   background-color: #68A2CA;
-  box-shadow: inset 0 0 0 3px #756257;
+  outline: 3px solid #756257;
 }
 
 .result-show-more:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
-
 
 /* Листалка =============================== */
 
@@ -1480,6 +1473,8 @@ body {
   box-sizing: border-box;
 }
 
+/* Кнопка закрытия модалки */
+
 .modal-close-button {
   position: absolute;
   display: flex;
@@ -1513,6 +1508,7 @@ body {
   background-color: #E6E6E6;
 }
 
+/* Заголовок модалки */
 
 .modal-title {
   margin: 0;
@@ -1545,6 +1541,9 @@ body {
   line-height: 40px;
 }
 
+.form-label-children {
+  padding-right: 53px;
+}
 
 .form-search-text {
   position: relative;
@@ -1585,7 +1584,6 @@ body {
   margin: 0;
 }
 
-
 .input-to {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1600,15 +1598,14 @@ body {
   outline: none;
 }
 
-
-
 .input-hint-error,
 .input-hint {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  margin-left: 152px;
+  margin-left: 150px;
+  padding-bottom: 16px;
 }
 
 .input-hint-error {
@@ -1619,16 +1616,12 @@ body {
   color: #333;
 }
 
-.search-button {
-  display: flex;
-  margin-top: 40px;
-}
-
 .search-submit-button {
   width: 575px;
   height: 60px;
   padding: 16px 0;
   border-radius: 10px;
+  margin-top: 40px;
   background-color: #83B3D3;
 }
 
@@ -1645,10 +1638,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-/* ============================== */
-
-
 .adults-and-children {
   display: flex;
 }
@@ -1659,6 +1648,16 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.plus-icon,
+.minus-icon {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  cursor: pointer;
 }
 
 .plus-icon:hover,
@@ -1709,10 +1708,16 @@ body {
 
 .date-icon {
   position: absolute;
-  left: 540px;
-  top: 17px;
+  right: 16px;
+  top: 16px;
   z-index: 1;
   opacity: 30%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  cursor: pointer;
 }
 
 .form-adults .form-search-text {
@@ -1724,39 +1729,44 @@ body {
   text-align: center;
 }
 
-/* Информация с тултипом */
+/* Тултип */
 
-.info {
-  position: relative;
+.tooltip {
+  position: absolute;
+  margin-top: 7px;
+  /* margin-left: 2px; */
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+  margin-right: 32px;
+  right: 132px;
+}
+
+.tooltip-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: #83B3D3;
-  border: none;
-  margin-right: 18px;
-  margin-left: 10px;
-  cursor: pointer;
 }
 
-.info:hover {
+.tooltip-toggle:hover {
   background-color: #68A2CA;
 }
 
-.info:focus {
+.tooltip-toggle:focus {
   outline: 3px solid #756257;
 }
 
-/* Тултип */
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
 
-.info::after {
-  z-index: 1;
-  position: absolute;
-  width: 256px;
-  min-width: 100%;
-  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
-  left: 50%;
-  transform: translateX(-50%);
-  top: calc(100% + 16px);
+.tooltip-text {
   background-color: #333;
   padding: 16px 20px;
   border-radius: 10px;
@@ -1767,30 +1777,30 @@ body {
   text-align: left;
   color: #fff;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.info::before {
-  content: "";
+  display: block;
+  width: 256px;
   position: absolute;
-  width: 0;
-  height: 0;
+  margin-top: 24px;
+  margin-left: 3px;
+  top: 100%;
   left: 50%;
-  top: calc(100% + 8px);
   transform: translateX(-50%);
-  border-style: solid;
-  border-width: 0 9.5px 9px 9.5px;
-  border-color: transparent transparent #333 transparent;
-  opacity: 0;
-  visibility: hidden;
-
+  z-index: 1;
+  display: none;
 }
 
-.info:hover::after,
-.info:hover::before {
-  opacity: 1;
-  visibility: visible;
+.tooltip-text::before {
+  content:'';
+  background-image: url("../images/svg/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 }
 
 /* Скрытие модального окна */
