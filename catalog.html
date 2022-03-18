@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -11,7 +12,7 @@
       <!--Шапка сайта-->
       <header class="page-header">
         <a class="navigation-logo" href="index.html" title="Главная страница">
-          <img class="page-header-logo" src="images/svg/logo.svg" width="139" alt="Логотип города Седона.">
+          <img class="page-header-logo" src="images/svg/logo.svg" width="139" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -148,7 +149,7 @@
                     </div>
                     <div class="range">
                       <div class="range-scale">
-                        <div class="range-bar" style="left: 0; width: 227px;">
+                        <div class="range-bar" style="left: 0; width: 238px;">
                           <button type="button" class="cost-toggle toggle-min"></button>
                           <button type="button" class="cost-toggle toggle-max"></button>
                         </div>
@@ -157,8 +158,8 @@
                 </fieldset>
               </li>
               <li class="filter-buttons">
-                <button class="button filter-fill-button" type="submit">Применить</button>
-                <button class="button filter-text-button" type="reset">Сбросить</button>
+                <button class="filter-fill-button button" type="submit">Применить</button>
+                <button class="filter-text-button button" type="reset">Сбросить</button>
               </li>
             </ul>
           </form>
@@ -172,7 +173,7 @@
             </div>
             <div class="select sorting-type">
               <button class="arrow-icon" type="button">
-                <img src="images/svg/arrow-icon.svg" alt="Открыть список">
+                <img src="images/svg/arrow-icon.svg" width="20" height="20" alt="Открыть список.">
               </button>
               <select class="select-control">
                 <option value="сheap">Сначала дешёвые</option>
@@ -213,6 +214,9 @@
                 </div>
                 <div class="hotel-card-grade">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
+                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
+                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
+                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <p class="hotel-card-rating">Рейтинг: 8,5</p>
                 </div>
               </div>
@@ -229,11 +233,9 @@
                 </div>
                 <div class="hotel-card-actions">
                   <a class="hotel-link-button button" href="#">Подробнее</a>
-                  <a class="in-favorites-button button" href="#">В избранное</a>
+                  <a class="in-favorites-button button" href="#">В избранном</a>
                 </div>
                 <div class="hotel-card-grade">
-                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
-                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
@@ -257,6 +259,7 @@
                 </div>
                 <div class="hotel-card-grade">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
+                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <p class="hotel-card-rating">Рейтинг: 9,2</p>
                 </div>
               </div>
@@ -276,6 +279,7 @@
                   <a class="hotel-card-button button" href="#">В избранное</a>
                 </div>
                 <div class="hotel-card-grade">
+                  <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
                   <p class="hotel-card-rating">Рейтинг: 9,2</p>
                 </div>
@@ -316,7 +320,7 @@
             <div class="number-select">
               <label for="hotels-per-page">Гостиниц на странице:</label>
               <button class="arrow-icon" type="button">
-                <img src="images/svg/arrow-icon.svg" alt="Открыть список">
+                <img src="images/svg/arrow-icon.svg" width="20" height="20" alt="Открыть список.">
               </button>
               <select name="hotels-per-page" id="hotels-per-page" class="select-control">
                 <option value="six">6</option>
@@ -346,7 +350,7 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="social-link" href="https://twitter.com/htmlacademy_ru" target="blank">
-                <span class="visually-hidden">Twitter</span>
+                <span class="visually-hidden">Twitter.</span>
                 <svg class="social-icon" aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6 2.1942C14.4 1.6942 15.8 2.4942 16.4 3.3942C17.1 3.1942 17.8 2.8942 18.5 2.6942C18.5 3.5942 17.9 4.1942 17.6 4.4942C18.3 4.5942 19 3.8942 19 3.8942C18.8 4.8942 17.9 5.6942 17.3 5.8942C17.1 12.6942 14 17.0942 6.7 16.9942C6.1 16.9942 6.8 16.9942 6.2 16.9942C5.8 16.9942 1.8 16.4942 1 15.0942C3.4 15.2942 5.1 14.6942 6 13.8942C5 13.5942 3.1 13.4942 2.8 10.9942C3.2 11.0942 3.4 11.1942 4.1 11.0942C2.8 10.2942 1.4 9.4942 1.5 7.2942C1.8 7.5942 2.6 7.7942 2.9 7.7942C2.1 7.5942 0.8 4.4942 1.9 2.8942C3.8 4.7942 5.9 6.4942 9.5 6.6942C9.7 4.2942 10.7 2.7942 12.6 2.1942Z"/>
                 </svg>
@@ -354,7 +358,7 @@
             </li>
             <li class="footer-social-item">
               <a class="social-link" href="https://www.facebook.com/htmlacademy" target="blank">
-                <span class="visually-hidden">Facebook</span>
+                <span class="visually-hidden">Facebook.</span>
                 <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 1C9.8 1 8 2.8 8 5V7H5V11H8V19H12V11H15V7H12V5H15V1H12Z"/>
                 </svg>
@@ -362,7 +366,7 @@
             </li>
             <li class="footer-social-item">
               <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="blank">
-                <span class="visually-hidden">Youtube</span>
+                <span class="visually-hidden">Youtube.</span>
                 <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8136 3.41818C18.6746 3.64867 19.3513 4.32532 19.5818 5.18637C19.9983 6.74547 20 10.0003 20 10.0003C20 10.0003 20 13.2552 19.5818 14.8143C19.3513 15.6753 18.6746 16.352 17.8136 16.5825C16.2545 17.0007 9.99996 17.0007 9.99996 17.0007C9.99996 17.0007 3.74547 17.0007 2.18636 16.5825C1.32532 16.352 0.648666 15.6753 0.418176 14.8143C0 13.2552 0 10.0003 0 10.0003C0 10.0003 0 6.74547 0.418176 5.18637C0.648666 4.32532 1.32532 3.64867 2.18636 3.41818C3.74547 3 9.99996 3 9.99996 3C9.99996 3 16.2545 3 17.8136 3.41818ZM13.194 10.0006L7.99808 13.0002V7.00092L13.194 10.0006Z"/>
                 </svg>
