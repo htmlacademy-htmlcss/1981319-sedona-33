@@ -129,7 +129,7 @@
         <!--Блок для перехода к поиску гостиниц-->
         <section class="hotel-search">
           <h2 class="hotel-search-title">Заинтересовались?</h2>
-          <p class="hotel-search-caption">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search-caption">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне &#160;</p>
           <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
@@ -168,8 +168,8 @@
             <li class="footer-social-item">
               <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="blank">
                 <span class="visually-hidden">Youtube.</span>
-                <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8136 3.41818C18.6746 3.64867 19.3513 4.32532 19.5818 5.18637C19.9983 6.74547 20 10.0003 20 10.0003C20 10.0003 20 13.2552 19.5818 14.8143C19.3513 15.6753 18.6746 16.352 17.8136 16.5825C16.2545 17.0007 9.99996 17.0007 9.99996 17.0007C9.99996 17.0007 3.74547 17.0007 2.18636 16.5825C1.32532 16.352 0.648666 15.6753 0.418176 14.8143C0 13.2552 0 10.0003 0 10.0003C0 10.0003 0 6.74547 0.418176 5.18637C0.648666 4.32532 1.32532 3.64867 2.18636 3.41818C3.74547 3 9.99996 3 9.99996 3C9.99996 3 16.2545 3 17.8136 3.41818ZM13.194 10.0006L7.99808 13.0002V7.00092L13.194 10.0006Z"/>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.915 2H2.885C1.195 2 0 3.5 0 5.2v9.5C0 16.5 1.194 18 2.886 18h14.228C18.607 18 20 16.5 20 14.8V5.2C19.801 3.5 18.607 2 16.915 2Zm-9.95 11.8V6.2l6.667 3.8-6.667 3.8Z" fill="#83B3D3"/>
                 </svg>
               </a>
             </li>
@@ -192,7 +192,7 @@
       </footer>
 
       <!-- Модальное окно -->
-      <div class="modal-container modal-container-close">
+      <div class="modal-container modal-close">
         <div class="modal modal-search">
           <button class="modal-close-button" type="button">
             <img src="images/svg/modal-close.svg" width="13" height="13" alt="Закрыть.">
@@ -206,17 +206,17 @@
                   <img src="images/svg/date-icon.svg" width="20" height="20" alt="Календарь.">
                 </button>
                 <label class="form-label" for="arrival-date">Дата заезда:</label>
-                <input class="form-search-text" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+                <input class="form-search-text" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                <span class="input-hint-error hint-error-hide">Мы не можем отправить вас в прошлое.</span>
               </div>
-              <p class="input-hint-error">Мы не можем отправить вас в прошлое.</p>
               <div class="field-group form-departure-date">
                 <button class="date-icon">
                   <img src="images/svg/date-icon.svg" width="20" height="20" alt="Календарь.">
                 </button>
                   <label class="form-label" for="departure-date">Дата выезда:</label>
-                  <input class="form-search-text" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
+                  <input class="form-search-text" type="text" id="departure-date" name="departure-date" value="1 сентября 2021">
+                  <span class="input-hint hint-hide">На эти даты есть свободные номера. Пока есть.</span>
               </div>
-              <p class="input-hint">На эти даты есть свободные номера. Пока есть.</p>
               <div class="adults-and-children">
                 <p class="field-group form-adults">
                   <label class="form-label" for="adults">Взрослые:</label>

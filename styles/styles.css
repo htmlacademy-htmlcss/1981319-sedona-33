@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  min-width: 1200px;
+  min-width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -249,6 +249,8 @@ body {
 .button:active {
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: none;
 }
 
 .navigation-link-button {
@@ -269,7 +271,7 @@ body {
 
 /* ====================================== ГЛАВНАЯ ====================================== */
 
-/* Фоновая картинка и разделитель на Главной ========== */
+/* Фоновая картинка и разделитель на Главной*/
 
 .welcome {
   background-color: #ccc;
@@ -282,7 +284,7 @@ body {
   margin-bottom: 64px;
 }
 
-/* Приветствие ========================== */
+/* Приветствие*/
 
 .welcome-inscription {
   margin: 0 auto;
@@ -431,7 +433,6 @@ body {
   padding: 0;
   list-style-type: none;
   min-height: 384px;
-  max-height: 384px;
 }
 
 .features-card-icon {
@@ -442,7 +443,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.features-card-icon:nth-child(2) {
+.features-card-icon:nth-child(2n) {
   background-color: #fff;
 }
 
@@ -484,7 +485,7 @@ body {
 }
 
 .hotel-search-caption {
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -497,8 +498,9 @@ body {
   display: block;
   min-width: 575px;
   padding: 12px 32px;
-  margin-top: 56px;
-  margin-bottom: 93px;
+  /* margin-top: 57px; */
+  /* margin-bottom: 93px; */
+  margin: 57px auto 93px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
@@ -532,7 +534,7 @@ body {
   line-height: 36px;
   color: #fff;
   text-transform: uppercase;
-  margin: 93px 70px 31px;
+  margin: 93px 70px 29px;
   text-align: center;
 }
 
@@ -561,7 +563,7 @@ body {
   flex-grow: 1;
   border: 2px solid #f2f2f2;
   background: #f2f2f2;
-  padding: 0 22px;
+  padding: 0 20px;
   width: 554px;
   height: 56px;
   border-radius: 10px 0px 0px 10px;
@@ -631,7 +633,7 @@ body {
   align-items: center;
   margin-left: 72px;
   margin-right: auto;
-  max-width: 120px;
+  max-width: 140px;
   width: 100%;
 }
 
@@ -640,18 +642,24 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
+  margin-bottom: 2px;
   padding: 0;
   list-style-type: none;
 }
 
 .footer-social-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 24px;
   height: 24px;
   margin-right: 16px;
-  margin-bottom: 4px;
+}
+
+.footer-social-item:nth-child(2) {
+  justify-content: center;
+}
+
+.footer-social-item:nth-child(3) {
+  justify-content: flex-end;
 }
 
 .social-icon {
@@ -671,7 +679,7 @@ body {
   outline: none;
 }
 
-.social-icon :active{
+.social-icon:active{
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -688,7 +696,6 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
-  /* text-align: center; */
   text-decoration: none;
   color: inherit;
 }
@@ -714,9 +721,9 @@ body {
 .footer-htmlacademy {
   display: flex;
   align-items: center;
-  width: 115px;
+  min-width: 115px;
   margin-left: auto;
-  margin-right: 72px;
+  margin-right: 50px;
 }
 
 .htmlacademy-logo {
@@ -725,10 +732,9 @@ body {
 }
 
 .footer-logo {
-  display: block;
   padding: 20px 22px;
-  margin-right: 72px;
   margin-left: auto;
+  margin-bottom: 5px;
 }
 
 .footer-logo:hover .htmlacademy-logo{
@@ -752,9 +758,11 @@ body {
 /* ====================================== КАТАЛОГ ====================================== */
 
 .hotels {
+  display: block;
   color: #fff;
   background-color: #aaa;
   background-image: url("../images/content/catalog-background.jpg");
+  background-size: cover;
   max-width: 1200px;
   width: 100%;
   min-height: 408px;
@@ -860,8 +868,12 @@ body {
   display: flex;
 }
 
-.catalog-filter-item:not(:last-child) {
+.catalog-filter-item {
   margin-bottom: 14px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 35px;
 }
 
 .catalog-filter-group {
@@ -1447,16 +1459,21 @@ input[type=number] {
 .pagination-view {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 1060px;
   margin: 0 auto;
 }
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.pagination-item {
+  margin-bottom: 8px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1570,7 +1587,7 @@ input[type=number] {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
   max-width: 464px;
   display: inline-block;
   font-family: "PT Sans", sans-serif;
@@ -1590,6 +1607,7 @@ input[type=number] {
 .field-group {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .form-label {
@@ -1600,16 +1618,16 @@ input[type=number] {
 }
 
 .form-label-children {
-  padding-right: 48px;
+  padding-right: 53px;
 }
 
 .form-search-text {
   position: relative;
   border: 3px solid #f2f2f2;
   background: #f2f2f2;
-  padding: 0 22px;
-  width: 89px;
-  height: 48px;
+  padding: 0 16px;
+  width: 96px;
+  height: 44px;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1649,18 +1667,29 @@ input[type=number] {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 155px;
+  margin: 2px auto 16px 155px; 
 }
 
 .input-hint-error {
   color: #ff5757;
-  margin-bottom: 16px;
+  position: absolute;
+  top: 100%;
 }
 
 .input-hint {
   color: #333;
-  margin-bottom: 16px;
+  position: absolute;
+  top: 100%;
 }
+
+/* Скрыть/Показать подсказки под полями в модалке */
+
+.hint-error-hide,
+.hint-hide {
+  display: none;
+}
+
+/* Кнопка "Найти" */
 
 .search-submit-button {
   font-family: inherit;
@@ -1673,7 +1702,6 @@ input[type=number] {
   min-height: 60px;
   padding: 4px 0;
   border-radius: 10px;
-  margin-top: 34px;
   background-color: #83b3d3;
 }
 
@@ -1688,6 +1716,8 @@ input[type=number] {
 
 .search-submit-button:active {
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: none;
 }
 
 .adults-and-children {
@@ -1708,7 +1738,6 @@ input[type=number] {
   background-color: transparent;
   padding: 0;
   margin: 0;
-  display: block;
   cursor: pointer;
 }
 
@@ -1720,12 +1749,13 @@ input[type=number] {
 .plus-icon:active,
 .minus-icon:active {
   opacity: 0.2;
+  outline: none;
 }
 
 .minus-icon {
   position: absolute;
   top: 16px;
-  right: 100px;
+  right: 98px;
   opacity: 30%;
   z-index: 1;
 }
@@ -1753,12 +1783,13 @@ input[type=number] {
 
 .form-arrival-date .form-search-text {
   margin-left: auto;
-  width: 370px;
+  width: 382px;
 }
 
 .form-departure-date .form-search-text {
+  position: relative;
   margin-left: auto;
-  width: 370px;
+  width: 382px;
 }
 
 .form-arrival-date,
@@ -1789,7 +1820,7 @@ input[type=number] {
 }
 
 .form-adults .form-search-text {
-  margin-left: 70px;
+  margin-left: 73px;
 }
 
 .form-adults .form-search-text,
@@ -1805,7 +1836,7 @@ input[type=number] {
   width: 16px;
   height: 16px;
   margin-right: 32px;
-  right: 132px;
+  right: 129px;
 }
 
 .tooltip-toggle {
@@ -1871,6 +1902,6 @@ input[type=number] {
 
 /* Скрытие модального окна */
 
-/* .modal-container-close {
+.modal-close {
   display: none;
-} */
+}
