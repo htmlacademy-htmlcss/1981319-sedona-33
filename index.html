@@ -20,7 +20,7 @@
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -46,9 +46,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-button button" href="#">
-              Хочу сюда!
-            </a>
+            <a class="navigation-link-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -57,6 +55,9 @@
       <main class="main-container">
         <section class="welcome">
           <h1 class="visually-hidden">Город Седона</h1>
+          <div class="polygonal">
+            <img src="images/svg/polygonal.svg" width="1200" height="57" alt="Многоугольник.">
+          </div>
           <figure class="welcome-inscription">
             <img src="images/svg/welcome-inscription.svg" width="485" height="352" alt="Приветствие.">
           </figure>
@@ -129,7 +130,7 @@
         <!--Блок для перехода к поиску гостиниц-->
         <section class="hotel-search">
           <h2 class="hotel-search-title">Заинтересовались?</h2>
-          <p class="hotel-search-caption">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search-caption">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне &#160;</p>
           <a class="hotel-search-link button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
@@ -138,7 +139,7 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-caption">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="form-text form-text-error" name="subscription-e-mail" placeholder="Ваш e-mail" type="email">
+            <input class="form-text" name="subscription-e-mail" placeholder="Ваш e-mail" type="email" required>
             <button class="subscription-button button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -192,7 +193,8 @@
       </footer>
 
       <!-- Модальное окно -->
-      <div class="modal-container modal-container-close">
+      <!-- Для отображения модального окна убрать класс "modal-close" в стилях -->
+      <div class="modal-container modal-close">
         <div class="modal modal-search">
           <button class="modal-close-button" type="button">
             <img src="images/svg/modal-close.svg" width="13" height="13" alt="Закрыть.">
@@ -206,17 +208,19 @@
                   <img src="images/svg/date-icon.svg" width="20" height="20" alt="Календарь.">
                 </button>
                 <label class="form-label" for="arrival-date">Дата заезда:</label>
-                <input class="form-search-text" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+                <input class="form-search-text" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                <!-- Для отображения подсказки с ошибкой убрать класс "hint-error-hide" в стилях -->
+                <span class="input-hint-error hint-error-hide">Мы не можем отправить вас в прошлое.</span>
               </div>
-              <p class="input-hint-error">Мы не можем отправить вас в прошлое.</p>
               <div class="field-group form-departure-date">
-                <button class="date-icon">
+                <button class="date-icon" type="button">
                   <img src="images/svg/date-icon.svg" width="20" height="20" alt="Календарь.">
                 </button>
                   <label class="form-label" for="departure-date">Дата выезда:</label>
-                  <input class="form-search-text" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
+                  <input class="form-search-text" type="text" id="departure-date" name="departure-date" value="1 сентября 2021">
+                  <!-- Для отображения подсказки убрать класс "hint-hide" в стилях -->
+                  <span class="input-hint hint-hide">На эти даты есть свободные номера. Пока есть.</span>
               </div>
-              <p class="input-hint">На эти даты есть свободные номера. Пока есть.</p>
               <div class="adults-and-children">
                 <p class="field-group form-adults">
                   <label class="form-label" for="adults">Взрослые:</label>
