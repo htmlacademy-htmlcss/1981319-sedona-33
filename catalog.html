@@ -20,7 +20,7 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
@@ -46,9 +46,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-button button" href="#">
-              Хочу сюда!
-            </a>
+            <a class="navigation-link-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -233,7 +231,7 @@
                 </div>
                 <div class="hotel-card-actions">
                   <a class="hotel-link-button button" href="#">Подробнее</a>
-                  <a class="in-favorites-button button" href="#">В избранном</a>
+                  <a class="hotel-card-button button" href="#">В избранное</a>
                 </div>
                 <div class="hotel-card-grade">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
@@ -255,7 +253,7 @@
                 </div>
                 <div class="hotel-card-actions">
                   <a class="hotel-link-button button" href="#">Подробнее</a>
-                  <a class="hotel-card-button button" href="#">В избранное</a>
+                  <a class="in-favorites-button button" href="#">В избранном</a>
                 </div>
                 <div class="hotel-card-grade">
                   <img class="hotel-card-stars" src="images/svg/star-icon.svg" width="20" height="20" alt="Рейтинг.">
@@ -289,7 +287,7 @@
 
           <!--Загрузить еще-->
           <div class="show-more">
-            <button class="result-show-more button">Загрузить ещё</button>
+            <button class="result-show-more button" type="button">Загрузить ещё</button>
           </div>
 
           <!--Листалка-->
@@ -323,8 +321,8 @@
                 <img src="images/svg/arrow-icon.svg" width="20" height="20" alt="Открыть список.">
               </button>
               <select name="hotels-per-page" id="hotels-per-page" class="select-control">
-                <option value="six">6</option>
-                <option value="nine">9</option>
+                <option value="six">4</option>
+                <option value="nine">8</option>
                 <option value="twelve">12</option>
                 <option value="all">Все</option>
               </select>
@@ -337,7 +335,7 @@
           <h2 class="subscription-title catalog-title">Подпишитесь на рассылку</h2>
           <p class="subscription-caption catalog-caption">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="form-text" name="subscription-e-mail" placeholder="Ваш e-mail" type="email">
+            <input class="form-text" name="subscription-e-mail" placeholder="Ваш e-mail" type="email" required>
             <button class="subscription-button button" type="submit">Подписаться</button>
           </form>
         </section>
