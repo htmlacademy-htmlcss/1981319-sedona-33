@@ -615,9 +615,9 @@ body {
   opacity: 30%;
 }
 
-.form-text:invalid
-.form-text.error:focus {
+.form-error {
   border: 3px solid #ff5757;
+  background-color: #fff;
 }
 
 .subscription-button {
@@ -1764,8 +1764,6 @@ input[type=number] {
   top: 100%;
 }
 
-/* Скрыть/Показать подсказки под полями в модалке */
-
 .hint-error-hide {
   display: none;
 }
@@ -1996,8 +1994,6 @@ input[type=number] {
   margin-right: auto;
   z-index: 1;
 }
-
-/* Скрытие/отображение модального окна */
 
 .modal-close {
   display: none;
